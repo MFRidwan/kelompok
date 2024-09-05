@@ -318,13 +318,12 @@ section .main_btn:hover i{
     border-radius: 15px;
 }
 .footer{
-    background-color: #000;
-    color: white;
-    border-radius: 15px;
-    margin: 10px;
-    padding: 17px;
-    text-align: center;
-    font-size: large;
     font-style: italic;
-    box-shadow: 0 0 15px 5px yellow;
+    text-align: center;
+    background-color: #1F2120;
+    box-shadow: 0 0 20px yellow;
+    margin: 15px;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
 }
