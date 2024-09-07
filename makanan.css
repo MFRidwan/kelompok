@@ -92,7 +92,7 @@ section .main{
 section .main .men_text h1{
     font-size: 60px;
     position: relative;
-    top: -100px;
+    top: -110px;
     left: 4px;
 }
 section .main .men_text h1 span{
@@ -116,7 +116,7 @@ section p{
     left: 87px;
     bottom: 150px;
     line-height: 23px;
-    margin-top: 50px;
+    margin-top: 65px;
 }
 section .main_btn{
     background: #fac031;
@@ -328,4 +328,7 @@ section .main_btn:hover i{
     color: white;
     padding: 20px;
     border-radius: 10px;
+}
+@media only screen and (max-width:767px) {
+    /*css rules for mobile devices*/
 }
