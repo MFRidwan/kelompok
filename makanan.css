@@ -329,6 +329,3 @@ section .main_btn:hover i{
     padding: 20px;
     border-radius: 10px;
 }
-@media only screen and (max-width:767px) {
-    /*css rules for mobile devices*/
-}

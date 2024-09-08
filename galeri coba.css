@@ -121,10 +121,10 @@ section .main{
     font-style: italic;
     text-align: center;
     background-color: #1F2120;
-    box-shadow: 0 0 20px yellow;
-    margin: 15px;
+    box-shadow: 0 0 20px 5px yellow;
+    margin: 10px;
     color: white;
-    padding: 20px;
+    padding: 10px;
     border-radius: 10px;
 
 }
