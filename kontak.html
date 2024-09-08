@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style>
+    body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+.header{
+    background-color: #1F2120;
+    height: 70px;
+    border-radius: 15px;
+    margin-top: -80px;
+    box-shadow: 0 0 10px 2px yellow;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+section{
+    width: 100%;
+    height: 100vh;
+}
+section nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    right: 0;
+    left: 0;
+    background: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0,.5);
+    z-index: 1000;
+}
+section nav .logo img{
+    width: 140px;
+    cursor: pointer;
+    margin: 7px 0;
+}
+section nav ul{
+    list-style: none;
+}
+section nav ul li{
+    display: inline-block;
+    margin: 0 15px;
+}
+section nav ul li a{
+    text-decoration: none;
+    color: gold;
+    font-weight: 500;
+    font-size: 17px;
+    transition: 0.1s;
+}
+section nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    background: #fac031;
+    display: block;
+    transition: 0.2s linear;
+}
+section nav ul li a:hover::after{
+    width: 100%;
+}
+section nav ul li a:hover{
+    color: white;
+}
+section nav .icon i{
+    font-size: 18px;
+    color: #fac031;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+section nav .icon i:hover{
+    color: white;
+}
+section nav .icon i{
+    font-size: 18px;
+    color: #fac031;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+section nav .icon i:hover{
+    color: white;
+}
+section .main{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    top: 130px;
+}
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: white;
+  color: black;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #1F2120;
+  padding: 20px;
+  width: 650px;
+  margin-left: 30%;
+  margin-top: 95px;
+  color: white  ;
+}
+.kata{
+    text-align: center;
+}
+
+.footer{
+    font-style: italic;
+    text-align: center;
+    background-color: #1F2120;
+    box-shadow: 0 0 20px yellow;
+    margin: 15px;
+    color: white;
+    padding: 5px;
+    border-radius: 10px;
+}
+</style>
+</head>
+<body>
+    <section>
+        <nav class="header">
+            <div class="logo">
+                <img src="pasola.png" alt="logo">
+            </div>
+
+            <ul>
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="tentang kami.html">Tentang kami</a></li>
+                <li><a href="makanan.html">Makanan</a></li>
+                <li><a href="minuman.html">Minuman</a></li>
+                <li><a href="galeri coba.html">Galeri</a></li>
+                <li><a href="kontak.html">Kontak</a></li>
+            </ul>
+
+            <div class="icon">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <i class="fa-solid fa-heart"></i>
+                <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+            
+        </nav>
+
+        <div class="container">
+            <h3 class="kata">Contact Form</h3>
+            <form action="/action_page.php">
+              <label for="fname">Full Name</label>
+              <input type="text" id="fname" name="firstname" placeholder="Your Full Name..">
+          
+              <label for="lname">Email</label>
+              <input type="text" id="lname" name="lastname" placeholder="Your Email..">
+          
+              <label for="country">Country</label>
+              <select id="country" name="country">
+                <option value="australia">Australia</option>
+                <option value="canada">Canada</option>
+                <option value="usa">USA</option>
+                <option value="indonesia">Indonesia</option>
+              </select>
+          
+              <label for="subject">Message</label>
+              <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+          
+              <input type="submit" value="Submit">
+            </form>
+          </div>
+
+          <div class="footer">
+            <p>Copyright @ PASOLA RESTAURANT 2024</p>
+        </div>
+    </section>
+</body>
+</html>
